@@ -1,0 +1,47 @@
+{
+  "name": "aa-sdk-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
+    "@types/express": "^5.0.1",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20.17.30",
+    "hardhat": "^2.22.19",
+    "nodemon": "^3.1.9",
+    "prisma": "^6.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "nodemon src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@account-kit/core": "^4.17.0",
+    "@account-kit/infra": "^4.17.0",
+    "@account-kit/smart-contracts": "^4.17.0",
+    "@alchemy/aa-alchemy": "^3.8.0",
+    "@alchemy/aa-core": "^3.8.0",
+    "@openzeppelin/contracts": "^5.2.0",
+    "@openzeppelin/contracts-upgradeable": "^5.2.0",
+    "@prisma/client": "^6.6.0",
+    "@privy-io/server-auth": "^1.21.0",
+    "@snapshot-labs/snapshot.js": "^0.12.59",
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "morgan": "^1.10.0",
+    "pinata": "^2.2.1",
+    "TREX": "https://github.com/TokenySolutions/T-REX.git",
+    "viem": "^2.20.0",
+    "wagmi": "^2.12.7",
+    "zod": "^3.24.3"
+  }
+}
