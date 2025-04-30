@@ -3,9 +3,13 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
- const privy = new PrivyClient('cm9ptz8aw003fl10ntm31980p', '5ptU3iaxhnCvnmhx5x2oun1d4gxYQoJZjkzjt8GBbjxpoCcQPZJ8JK7kkrmex3wymtzpnDMueHyeKX5TVBJEziBh', {
+// Load environment variables
+const apiKey = process.env.API_KEY as string;
+const privateKey = process.env.PRIVATE_KEY as string;
+const authorizationPrivateKey = process.env.AUTHORIZATION_PRIVATE_KEY as string;
+ const privy = new PrivyClient(apiKey,privateKey, {
   walletApi: {
-    authorizationPrivateKey: 'insert-your-authorization-private-key-from-the-dashboard'
+    authorizationPrivateKey: authorizationPrivateKey
   }
   
 });
